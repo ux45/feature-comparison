@@ -7,10 +7,10 @@ div.radio, div.checkbox {
   margin-bottom: 0; 
 }
 .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-margin-left: 0;
-margin-top: 4px \9;
+  margin-left: 0;
 }
-input.vbo-table-select-all{
+input.vbo-table-select-all,
+.checkbox input[type="checkbox"].vbo-table-select-all{
   margin-top: -14px;
 }
 .container-inline div{
@@ -177,7 +177,8 @@ html.js .block-refresh-button {
   min-width: 300px;
   width:35%;
 }
-#views-form-feature-list-page .form-wrapper .panel-body{
+#views-form-feature-list-page .form-wrapper .panel-body,
+#views-form-taxonomy-term-page .form-wrapper .panel-body{
   padding: 10px 0 0;
   margin-left: 3px;
 }
@@ -199,7 +200,8 @@ html.js .block-refresh-button {
   line-height: normal;
   position: relative;
 }
-#views-form-feature-list-page fieldset .btn-success:before {
+#views-form-feature-list-page fieldset .btn-success:before,
+#views-form-taxonomy-term-page fieldset .btn-success:before {
   content: " ";
   display: inline-block;
   position: absolute;
@@ -210,7 +212,8 @@ html.js .block-refresh-button {
   border-bottom: 0 solid #eee;
   border-left: 8px solid transparent;
 }
-#views-form-feature-list-page fieldset .btn-success:after {
+#views-form-feature-list-page fieldset .btn-success:after,
+#views-form-taxonomy-term-page fieldset .btn-success:after {
   content: " ";
   display: inline-block;
   position: absolute;
@@ -232,6 +235,9 @@ html.js .block-refresh-button {
 }
 
 /* software and features table */
+table th.views-field-ops{
+  white-space: nowrap;
+}
 .vbo-table-select-all-pages.btn-default {
   color: #FFF;
   background-color: #E99002;
@@ -291,6 +297,39 @@ html.js .block-refresh-button {
 #footer_wrapper{
   margin-top: 50px;
   padding: 30px 0;
+}
+
+/* Feature pages */
+.feature-node-page .main-container{
+  max-width: 1500px;
+}
+#feature-display-panel .flag-my-features .flag-message {
+  left: 94px;
+}
+#feature-display-panel .flag-outer-my-features{
+  margin: 8px 0;
+}
+#feature-display-panel a.flag {
+  color: #ffffff;
+  background-color: #43ac6a;
+  border-color: #3c9a5f;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 8px 12px;
+  font-size: 15px;
+  line-height: 1.4;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* responsive */
