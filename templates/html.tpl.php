@@ -56,6 +56,9 @@
   <link rel="stylesheet" type="text/css" href="/sites/all/themes/featcomp/dashboard_theme/css/plugins/morris.css">
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" />
   <?php print $styles; ?>
+  <!--[if lte IE 10]>
+    <link href="/sites/all/themes/featcomp/ie_styles.css" rel="stylesheet" type="text/css" />
+  <![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Dosis:300,400|Lato:300,400|Quicksand|Raleway|Roboto:300|Roboto+Condensed:400,300|Oxygen:300' rel='stylesheet' type='text/css'>
   <?php print $scripts; ?>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
