@@ -16,5 +16,7 @@ jQuery(document).ready(function()
 				jQuery(".vbo-views-form #edit-select").hide(200);
 	    }
 		});
+    jQuery("#block-system-main-menu .nav").addClass("nav-pills");
+    jQuery(".logged-in.page-node #main-content-area .tabs--primary.nav").removeClass("nav-tabs").addClass("nav-pills");
   } 
 ); 
